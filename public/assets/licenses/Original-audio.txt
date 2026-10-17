@@ -1,0 +1,2 @@
+Original score and transition accents generated exclusively for this project by scripts/generate-score.py. No recordings, samples, borrowed melody, or cloned voices. Original audio and its synthesis script are dedicated to the public domain under CC0 1.0 Universal to the extent legally possible. https://creativecommons.org/publicdomain/zero/1.0/
+This dedication does not apply to user-supplied text, fonts, icons, or the rest of the repository.

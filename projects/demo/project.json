@@ -1,0 +1,82 @@
+{
+  "name": "Dùng AI. Giữ nhân tính.",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationSeconds": 66,
+  "music": "assets/original-score.m4a",
+  "scenes": [
+    {
+      "kind": "hook",
+      "seconds": 3,
+      "title": "AI có thể cầu nguyện thay bạn?",
+      "narration": "AI có thể viết lời cầu nguyện. Nhưng sống đức tin thay bạn thì sao?"
+    },
+    {
+      "kind": "tools",
+      "seconds": 5,
+      "title": "Một công cụ. Nhiều khả năng.",
+      "narration": "Dịch tài liệu, gợi ý học tập, tìm ý tưởng: AI có thể hỗ trợ bạn."
+    },
+    {
+      "kind": "choice",
+      "seconds": 5,
+      "title": "Ai đang cầm lái?",
+      "narration": "Công cụ có thể rất mạnh. Người chịu trách nhiệm vẫn là bạn."
+    },
+    {
+      "kind": "truth",
+      "seconds": 6,
+      "title": "Trông thật ≠ là thật",
+      "narration": "Một hình ảnh thuyết phục chưa chắc là bằng chứng. Đừng vội chia sẻ."
+    },
+    {
+      "kind": "verify",
+      "seconds": 6,
+      "title": "Dừng. Kiểm. Rồi chia sẻ.",
+      "narration": "Tìm nguồn gốc, đọc ngữ cảnh, đối chiếu nguồn đáng tin trước khi chia sẻ."
+    },
+    {
+      "kind": "learn",
+      "seconds": 6,
+      "title": "Dùng AI để học.",
+      "narration": "Hỏi gợi ý, tự giải thích, rồi tự viết. Đừng giao cả việc suy nghĩ cho máy."
+    },
+    {
+      "kind": "privacy",
+      "seconds": 6,
+      "title": "Giữ điều riêng tư.",
+      "narration": "Đừng đưa mật khẩu, hồ sơ riêng hay câu chuyện của người khác lên chatbot."
+    },
+    {
+      "kind": "prayer",
+      "seconds": 6,
+      "title": "Dành chỗ cho thinh lặng.",
+      "narration": "AI có thể gợi ý câu chữ. Cầu nguyện là cuộc gặp gỡ của chính bạn với Chúa."
+    },
+    {
+      "kind": "community",
+      "seconds": 6,
+      "title": "Kết nối cần người thật.",
+      "narration": "Một tin nhắn không thay được mọi cuộc gặp. Hãy đến với gia đình và cộng đoàn."
+    },
+    {
+      "kind": "service",
+      "seconds": 6,
+      "title": "Đưa đức tin ra đời sống.",
+      "narration": "Thăm người già, giúp bạn học, phục vụ người khó khăn. Biến ý tốt thành việc thật."
+    },
+    {
+      "kind": "compass",
+      "seconds": 5,
+      "title": "Ba câu hỏi trước khi dùng AI.",
+      "narration": "Có đúng không? Có tôn trọng con người không? Có phục vụ điều thiện không?"
+    },
+    {
+      "kind": "outro",
+      "seconds": 6,
+      "title": "Dùng AI. Giữ nhân tính.",
+      "narration": "Hôm nay, kiểm chứng một tin. Tắt màn hình một lúc. Làm một việc bác ái."
+    }
+  ]
+}

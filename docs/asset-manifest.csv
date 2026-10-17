@@ -1,0 +1,7 @@
+asset,type,source,rights,usage
+"Nội dung bài chia sẻ","user supplied text","Văn bản đã dán.txt; Lm Phêrô Trần Mạnh Hùng STD","Người dùng cung cấp để chuyển thể; không xác nhận giấy phép xuất bản rộng hơn","Biên tập ý chính; không sao chép toàn bài"
+"Typography và hình học gốc","original vector motion","src/scenes/*.tsx; src/design.tsx","Sáng tạo riêng cho dự án; không lấy ảnh hoặc video bên thứ ba","12 cảnh; SVG chỉ là thành phần đồ họa trong MP4"
+"Lucide icons","vector icons","https://github.com/lucide-icons/lucide; lucide-react 0.468.0","ISC; giữ thông báo tại public/assets/licenses/Lucide.txt","Icon học tập bảo mật con người bác ái"
+"DejaVu Sans Regular/Bold; DejaVu Serif","fonts","https://dejavu-fonts.github.io/; bản cài hệ thống","Bitstream Vera / DejaVu; thông báo tại public/assets/licenses/DejaVu.txt","Font được đóng gói trong public/assets/fonts"
+"original-score.m4a","original synthesized music and accents","scripts/generate-score.py","CC0-1.0; không sample hoặc giai điệu mượn; xem Original-audio.txt","Nhạc nền 66s và accent tại điểm chuyển cảnh"
+"Vox reference","reference only","https://www.youtube.com/watch?v=kIID5FDi2JQ","Không tái sử dụng tư liệu; không tuyên bố cấp phép Vox","Tham khảo nguyên lý editorial; truy cập YouTube hiện bị chặn"

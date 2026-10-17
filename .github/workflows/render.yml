@@ -1,0 +1,70 @@
+name: Render MP4
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'src/**'
+      - 'projects/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'docs/**'
+      - 'package*.json'
+      - 'remotion.config.ts'
+      - 'tsconfig.json'
+      - '.github/workflows/render.yml'
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'projects/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'package*.json'
+      - '.github/workflows/render.yml'
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Ensure FFmpeg and browser
+        run: |
+          if ! command -v ffmpeg >/dev/null; then sudo apt-get update && sudo apt-get install -y ffmpeg; fi
+          if [ ! -x /usr/bin/google-chrome ] && [ ! -x /usr/bin/chromium ]; then npx remotion browser ensure; fi
+      - name: Validate and typecheck
+        run: npm run validate && npm run typecheck
+      - name: Render MP4
+        run: npm run render
+      - name: Verify dimensions duration codec and decoding
+        run: |
+          node scripts/verify-output.mjs
+          ffmpeg -v error -i out/vox-short.mp4 -f null -
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vox-short-mp4
+          path: out/vox-short.mp4
+          if-no-files-found: error
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vox-short-source
+          path: |
+            src/
+            projects/
+            public/
+            scripts/
+            docs/
+            package.json
+            package-lock.json
+            tsconfig.json
+            remotion.config.ts
+            README.md
+          if-no-files-found: error
+          retention-days: 30
